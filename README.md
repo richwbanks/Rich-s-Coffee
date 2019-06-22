@@ -1,2 +1,2 @@
-# test-portfolio
-Demo of codeanywhere and github portfolio page
+# Rich's Coffee
+E-Commerce Website

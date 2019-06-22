@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="filtertest.css">
+</head>
+<body>
+
+    <p>hello</p>
+
+    <!-- Control buttons -->
+<div id="myBtnContainer">
+        <button class="btn-filter active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn-filter" onclick="filterSelection('cars')"> Cars</button>
+        <button class="btn-filter" onclick="filterSelection('animals')"> Animals</button>
+        <button class="btn-filter" onclick="filterSelection('fruits')"> Fruits</button>
+        <button class="btn-filter" onclick="filterSelection('colors')"> Colors</button>
+      </div>
+      
+      <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+      <div class="container-filter">
+        <div class="filterDiv-filter cars">BMW</div>
+        <div class="filterDiv-filter colors fruits">Orange</div>
+        <div class="filterDiv-filter cars">Volvo</div>
+        <div class="filterDiv-filter colors">Red</div>
+        <div class="filterDiv-filter cars animals">Mustang</div>
+        <div class="filterDiv-filter colors">Blue</div>
+        <div class="filterDiv-filter animals">Cat</div>
+        <div class="filterDiv-filter animals">Dog</div>
+        <div class="filterDiv-filter fruits">Melon</div>
+        <div class="filterDiv-filter fruits animals">Kiwi</div>
+        <div class="filterDiv-filter fruits">Banana</div>
+        <div class="filterDiv-filter fruits">Lemon</div>
+        <div class="filterDiv-filter animals">Cow</div>
+      </div>
+
+      <h1>Hello There!</h1>
+
+      <div>
+        <img src="https://images.unsplash.com/photo-1525445842399-d8a6bec24be2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="" class="product-image">
+        <div>Product Name</div>
+        <div>Radio Buttons</div>
+        <span>
+        <div class="input-group mb-3" style="max-width: 120px;">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-primary js-btn-minus" type="button">&minus;</button>
+                </div>
+                <input type="text" class="form-control text-center" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-primary js-btn-plus" type="button">&plus;</button>
+                </div>
+        </div>
+        </span>
+        <span><a href="#" class="btn btn-sm btn-primary">Add To Cart</a></span>
+
+
+
+
+
+      </div>
+
+      
+
+      
+
+      
+
+
+
+    
+    <script src="filtertest.js"></script>
+</body>
+</html>

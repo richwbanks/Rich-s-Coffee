@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rich's Coffee - All Products</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body>
+        <div>
+                <header class="site-navbar" role="banner">
+                    <div class="site-navbar-top">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left"></div>
+                                    <div class="col-12 mb-3 order-1 order-md-2 text-center">
+                                            <a href="#"><div class="site-logo">
+                                            <div class="outside-div">
+                                                <h1 class="rich-coffee">Rich's Coffee</h1>
+                                            </div>
+                                        </div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                
+                <ul class ="row top-border" >
+                    <li class="top-nav-bar col-lg-2 col-md-2 col-sm-0 col-xs-2"></li>
+                    <li class="top-nav-bar col-lg-2 col-md-2 col-sm-3 col-xs-2"><a href="#">Coffee</a></li>
+                    <li class="top-nav-bar col-lg-2 col-md-2 col-sm-3 col-xs-2"><a href="#">Equipment</a></li>
+                    <li class="top-nav-bar col-lg-2 col-md-2 col-sm-3 col-xs-2"><a href="#">About</a></li>
+                    <li class="top-nav-bar col-lg-2 col-md-2 col-sm-3 col-xs-2"><a href="#"><i class="fas fa-shopping-cart" id="top-cart"></i></a></li>
+                    <li class="top-nav-bar col-lg-2 col-md-2 col-sm-0 col-xs-2"></li>
+                </ul>
+        
+                <section class="filter-buttons">
+                    <div class="button-container-filter" >
+                        <h1 class="product-title">All Products</h1>
+                        <div id="myBtnContainer" class="row">
+                            <button class="btn-filter btn btn-sm btn-primary active col-lg-2 col-md-2 col-sm-2 col-sm-2" onclick="filterSelection('all')"> All Products</button>
+                            <button class="btn-filter btn btn-sm btn-primary col-lg-2 col-md-2 col-sm-2 col-sm-2" onclick="filterSelection('coffee')"> Coffee</button>
+                            <button class="btn-filter btn btn-sm btn-primary col-lg-2 col-md-2 col-sm-2 col-sm-2" onclick="filterSelection('equipment')"> Equipment</button>
+                            <button class="btn-filter btn btn-sm btn-primary col-lg-2 col-md-2 col-sm-2 col-sm-2" onclick="filterSelection('deals')"> Today's Deals</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="filter-buttons">
+                        <div class="button-container-filter" >
+                            <div id="myBtnContainer" class="row">
+                                <button class="btn-filter btn btn-sm btn-primary active col-lg-2 col-md-2 col-sm-2 col-sm-2" onclick="filterSelection('espresso')"> Espresso</button>
+                                <button class="btn-filter btn btn-sm btn-primary col-lg-2 col-md-2 col-sm-2 col-sm-2" onclick="filterSelection('blends')"> Blends</button>
+                                <button class="btn-filter btn btn-sm btn-primary col-lg-2 col-md-2 col-sm-2 col-sm-2" onclick="filterSelection('decaffeinated')"> Decaffeinated</button>
+                                <button class="btn-filter btn btn-sm btn-primary col-lg-2 col-md-2 col-sm-2 col-sm-2" onclick="filterSelection('iced-coffee')"> Iced Coffee</button>
+                            </div>
+                        </div>
+                </section>
+                <section class="filter-buttons">
+                        <div class="button-container-filter" >
+                            <div id="myBtnContainer" class="row">
+                                <button class="btn-filter btn btn-sm btn-primary active col-lg-2 col-md-2 col-sm-2 col-sm-2" onclick="filterSelection('brew-supplies')"> Brew Supplies</button>
+                                <button class="btn-filter btn btn-sm btn-primary col-lg-2 col-md-2 col-sm-2 col-sm-2" onclick="filterSelection('makers')"> Coffee Makers</button>
+                                <button class="btn-filter btn btn-sm btn-primary col-lg-2 col-md-2 col-sm-2 col-sm-2" onclick="filterSelection('grinders')"> Grinders</button>
+                                <button class="btn-filter btn btn-sm btn-primary col-lg-2 col-md-2 col-sm-2 col-sm-2" onclick="filterSelection('mugs')"> Mugs</button>
+                            </div>
+                        </div>
+                </section>
+        
+            <section class="all-products">
+                <section>
+                        <div class="container-filter row">
+                            <div class="filterDiv-filter espresso coffee col-lg-4 col-md-4 col-sm-5 col-xs-6">
+                                <div>
+                                    <img src="https://images.pexels.com/photos/977876/pexels-photo-977876.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-image">
+                                </div>
+                                <h4>Energy Espresso</h4>
+                                <h6>
+                                    <form class="product-price">
+                                        <input type="radio" name="weight" value="12oz"><span class="price"> 12oz ($14.50)</span>
+                                        <input type="radio" name="weight" value="3lb"><span class="price"> 36oz ($28.00)</span>
+                                    </form>
+                                </h6>
+                                <h6>
+                                    <form>
+                                        <a href="#"><button id="purchase-button" class="btn btn-sm btn-primary">Add To Cart</button></a>
+                                    </form>
+                                </h6>           
+                            </div>
+                            <div class="filterDiv-filter espresso coffee col-lg-4 col-md-4 col-sm-5 col-xs-6">
+                                <div>
+                                    <img src="https://images.unsplash.com/photo-1522922235461-912955b0772b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="" class="product-image">
+                                </div>
+                                <h4>Breakfast Espresso</h4>
+                                <h6>
+                                    <form class="product-price">
+                                        <input type="radio" name="weight" value="12oz"><span class="price"> 12oz ($12.75)</span>
+                                        <input type="radio" name="weight" value="3lb"><span class="price"> 36oz ($25.00)</span>
+                                    </form>
+                                </h6>
+                                <h6>
+                                    <form>
+                                        <a href="#"><button id="purchase-button" class="btn btn-sm btn-primary">Add To Cart</button></a>
+                                    </form>
+                                </h6>  
+                            </div>
+                            <div class="filterDiv-filter blends coffee col-lg-4 col-md-4 col-sm-5 col-xs-6">
+                                <div>
+                                    <img src="https://images.unsplash.com/photo-1504630083234-14187a9df0f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="" class="product-image">
+                                </div>
+                                <h4>Guatamala Blend</h4>
+                                <h6>
+                                    <form class="product-price">
+                                        <input type="radio" name="weight" value="12oz"><span class="price"> 12oz ($13.50)</span>
+                                        <input type="radio" name="weight" value="3lb"><span class="price"> 36oz ($27.00)</span>
+                                    </form>
+                                </h6>
+                                <h6>
+                                    <form>
+                                        <a href="#"><button id="purchase-button" class="btn btn-sm btn-primary">Add To Cart</button></a>
+                                    </form>
+                                </h6>  
+                            </div>
+                            <div class="filterDiv-filter blends coffee col-lg-4 col-md-4 col-sm-5 col-xs-6">
+                                <div>
+                                    <img src="https://images.unsplash.com/photo-1546358077-7f27eb6f29f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="" class="product-image">
+                                </div>
+                                <h4>Vanilla Blend</h4>
+                                <h6>
+                                    <form class="product-price">
+                                        <input type="radio" name="weight" value="12oz"><span class="price"> 12oz ($12.50)</span>
+                                        <input type="radio" name="weight" value="3lb"><span class="price"> 36oz ($25.00)</span>
+                                    </form>
+                                </h6>
+                                <h6>
+                                    <form>
+                                        <a href="#"><button id="purchase-button" class="btn btn-sm btn-primary">Add To Cart</button></a>
+                                    </form>
+                                </h6>  
+                            </div>
+                            <div class="filterDiv-filter decaffeinated coffee col-lg-4 col-md-4 col-sm-5 col-xs-6">
+                                <div>
+                                    <img src="https://images.unsplash.com/photo-1554210606-885b75e8650d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="" class="product-image">
+                                </div>
+                                <h4>Decaf Cuban Roast</h4>
+                                <h6>
+                                    <form class="product-price">
+                                        <input type="radio" name="weight" value="12oz"><span class="price"> 12oz ($14.25)</span>
+                                        <input type="radio" name="weight" value="3lb"><span class="price"> 36oz ($28.50)</span>
+                                    </form>
+                                </h6>
+                                <h6>
+                                    <form>
+                                        <a href="#"><button id="purchase-button" class="btn btn-sm btn-primary">Add To Cart</button></a>
+                                    </form>
+                                </h6>  
+                            </div>
+                            <div class="filterDiv-filter decaffeinated coffee col-lg-4 col-md-4 col-sm-5 col-xs-6">
+                                <div>
+                                    <img src="https://images.unsplash.com/photo-1549063729-f02aba455bda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="" class="product-image">
+                                </div>
+                                <h4>Decaf Hazelnut Roast</h4>
+                                <h6>
+                                    <form class="product-price">
+                                        <input type="radio" name="weight" value="12oz"><span class="price"> 12oz ($12.00)</span>
+                                        <input type="radio" name="weight" value="3lb"><span class="price"> 36oz ($24.00)</span>
+                                    </form>
+                                </h6>
+                                <h6>
+                                    <form>
+                                        <a href="#"><button id="purchase-button" class="btn btn-sm btn-primary">Add To Cart</button></a>
+                                    </form>
+                                </h6>  
+                            </div>
+                            <div class="filterDiv-filter iced-coffee col-lg-4 col-md-4 col-sm-5 col-xs-6">
+                                <div>
+                                    <img src="https://images.unsplash.com/photo-1484542959923-de288ec85ce1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80" alt="" class="product-image">
+                                </div>
+                                <h4>Iced Vanilla</h4>
+                                <h6>
+                                    <form class="product-price">
+                                        <input type="radio" name="weight" value="12oz"><span class="price"> 12oz ($12.50)</span>
+                                        <input type="radio" name="weight" value="3lb"><span class="price"> 36oz ($25.00)</span>
+                                    </form>
+                                </h6>
+                                <h6>
+                                    <form>
+                                        <a href="#"><button id="purchase-button" class="btn btn-sm btn-primary">Add To Cart</button></a>
+                                    </form>
+                                </h6>  
+                            </div>
+                            <div class="filterDiv-filter iced-coffee col-lg-4 col-md-4 col-sm-5 col-xs-6">
+                                <div>
+                                    <img src="https://images.unsplash.com/photo-1471691118458-a88597b4c1f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="" class="product-image">
+                                </div>
+                                <h4>Espresso Cold Brew</h4>
+                                <h6>
+                                    <form class="product-price">
+                                        <input type="radio" name="weight" value="12oz"><span class="price"> 12oz ($13.00)</span>
+                                        <input type="radio" name="weight" value="3lb"><span class="price"> 36oz ($26.00)</span>
+                                    </form>
+                                </h6>
+                                <h6>
+                                    <form>
+                                        <a href="#"><button id="purchase-button" class="btn btn-sm btn-primary">Add To Cart</button></a>
+                                    </form>
+                                </h6>  
+                            </div>
+                        </div>
+                </section>
+        
+                <section>
+                        <div class="container-filter row">
+                            <div class="filterDiv-filter brew-supplies equipment col-lg-4 col-md-4 col-sm-5 col-xs-6">
+                                <div>
+                                    <img src="https://images.pexels.com/photos/46170/kitchen-scale-weighing-baking-cooking-46170.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-image">
+                                </div>
+                                <h4>Classic Scale</h4>
+                                <h6>
+                                    $30.00
+                                </h6>
+                                <h6>
+                                    <form>
+                                        <a href="#"><button id="purchase-button" class="btn btn-sm btn-primary">Add To Cart</button></a>
+                                    </form>
+                                </h6>           
+                            </div>
+                            <div class="filterDiv-filter brew-supplies equipment col-lg-4 col-md-4 col-sm-5 col-xs-6">
+                                <div>
+                                    <img src="https://images.unsplash.com/photo-1465385076216-9288f6f0584b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1648&q=80" alt="" class="product-image">
+                                </div>
+                                <h4>Copper Kettle</h4>
+                                <h6>
+                                    $50.00
+                                </h6>
+                                <h6>
+                                    <form>
+                                        <a href="#"><button id="purchase-button" class="btn btn-sm btn-primary">Add To Cart</button></a>
+                                    </form>
+                                </h6>  
+                            </div>
+                            <div class="filterDiv-filter grinders equipment col-lg-4 col-md-4 col-sm-5 col-xs-6">
+                                <div>
+                                    <img src="https://images.pexels.com/photos/1309778/pexels-photo-1309778.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-image">
+                                </div>
+                                <h4>Barista Grinder</h4>
+                                <h6>
+                                    $250.00
+                                </h6>
+                                <h6>
+                                    <form>
+                                        <a href="#"><button id="purchase-button" class="btn btn-sm btn-primary">Add To Cart</button></a>
+                                    </form>
+                                </h6>  
+                            </div>
+                            <div class="filterDiv-filter grinders equipment col-lg-4 col-md-4 col-sm-5 col-xs-6">
+                                <div>
+                                    <img src="https://images.unsplash.com/photo-1461988279488-1dac181a78f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80" alt="" class="product-image">
+                                </div>
+                                <h4>Barista Super Grinder</h4>
+                                <h6>
+                                    $450.00
+                                </h6>
+                                <h6>
+                                    <form>
+                                        <a href="#"><button id="purchase-button" class="btn btn-sm btn-primary">Add To Cart</button></a>
+                                    </form>
+                                </h6>  
+                            </div>
+                            <div class="filterDiv-filter makers equipment col-lg-4 col-md-4 col-sm-5 col-xs-6">
+                                <div>
+                                    <img src="https://images.pexels.com/photos/324028/pexels-photo-324028.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-image">
+                                </div>
+                                <h4>Coffee Maker</h4>
+                                <h6>
+                                    $75.00
+                                </h6>
+                                <h6>
+                                    <form>
+                                        <a href="#"><button id="purchase-button" class="btn btn-sm btn-primary">Add To Cart</button></a>
+                                    </form>
+                                </h6>  
+                            </div>
+                            <div class="filterDiv-filter makers equipment col-lg-4 col-md-4 col-sm-5 col-xs-6">
+                                <div>
+                                    <img src="https://images.unsplash.com/photo-1549232843-f905bd73a02d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="" class="product-image">
+                                </div>
+                                <h4>Grande Coffee Maker</h4>
+                                <h6>
+                                    $90.00
+                                </h6>
+                                <h6>
+                                    <form>
+                                        <a href="#"><button id="purchase-button" class="btn btn-sm btn-primary">Add To Cart</button></a>
+                                    </form>
+                                </h6>  
+                            </div>
+                            <div class="filterDiv-filter mugs equipment col-lg-4 col-md-4 col-sm-5 col-xs-6">
+                                <div>
+                                    <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="" class="product-image">
+                                </div>
+                                <h4>Small Mug</h4>
+                                <h6>
+                                    $12.00
+                                </h6>
+                                <h6>
+                                    <form>
+                                        <a href="#"><button id="purchase-button" class="btn btn-sm btn-primary">Add To Cart</button></a>
+                                    </form>
+                                </h6>  
+                            </div>
+                            <div class="filterDiv-filter mugs equipment col-lg-4 col-md-4 col-sm-5 col-xs-6">
+                                <div>
+                                    <img src="https://images.unsplash.com/photo-1512441294539-d74b41132524?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="" class="product-image">
+                                </div>
+                                <h4>Large Mug</h4>
+                                <h6>
+                                    $15.00
+                                </h6>
+                                <h6>
+                                    <form>
+                                        <a href="#"><button id="purchase-button" class="btn btn-sm btn-primary">Add To Cart</button></a>
+                                    </form>
+                                </h6>  
+                            </div>
+                        </div>
+                </section>
+        
+                    <section>
+                        <div class="container-filter row">
+                                <div class="filterDiv-filter col-lg-4 col-md-4 col-sm-5 col-xs-6">
+                                    <div>
+                                        <img src="https://images.unsplash.com/photo-1492158244976-29b84ba93025?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80" alt="" class="product-image">
+                                    </div>
+                                    <h4>Coffee Sampler Set</h4>
+                                    <h6>
+                                        $12.00
+                                    </h6>
+                                    <h6>
+                                        <form>
+                                            <a href="#"><button id="purchase-button" class="btn btn-sm btn-primary">Add To Cart</button></a>
+                                        </form>
+                                    </h6>           
+                                </div>
+                                <div class="filterDiv-filter deals col-lg-4 col-md-4 col-sm-5 col-xs-6">
+                                    <div>
+                                        <img src="https://images.unsplash.com/photo-1465385076216-9288f6f0584b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1648&q=80" alt="" class="product-image">
+                                    </div>
+                                    <h4>Colombian Blend</h4>
+                                    <h6>
+                                        <form class="product-price">
+                                            <input type="radio" name="weight" value="12oz"><span class="price"> 12oz ($9.00)</span>
+                                            <input type="radio" name="weight" value="3lb"><span class="price"> 36oz ($18.00)</span>
+                                        </form>
+                                    </h6>
+                                    <h6>
+                                        <form>
+                                            <a href="#"><button id="purchase-button" class="btn btn-sm btn-primary">Add To Cart</button></a>
+                                        </form>
+                                    </h6>  
+                                </div>
+                                <div class="filterDiv-filter deals col-lg-4 col-md-4 col-sm-5 col-xs-6">
+                                    <div>
+                                        <img src="https://images.pexels.com/photos/1309778/pexels-photo-1309778.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-image">
+                                    </div>
+                                    <h4>Capuccino Mix</h4>
+                                    <h6>
+                                        $12.00
+                                    </h6>
+                                    <h6>
+                                        <form>
+                                            <a href="#"><button id="purchase-button" class="btn btn-sm btn-primary">Add To Cart</button></a>
+                                        </form>
+                                    </h6>  
+                                </div>
+                        </div>
+                    </section>
+            </section>  
+        
+                <footer class="site-footer">
+                        <div class="site-section site-blocks-2 border-top-bottom" id="all-products-page-bump">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-4 col-12-mobile">
+                                <article class="item">
+                                  <header>
+                                    <strong><h3 class="fontcolor">Site Map</h3></strong>
+                                    <ul class="list-unstyled site-map-list">
+                                      <li><a href="#">All Products</a></li>
+                                      <li><a href="#">Coffee</a></li>
+                                      <li><a href="#">Equipment</a></li>
+                                      <li><a href="#">Shopping Cart</a></li>
+                                    </ul>
+                                  </header>
+                                </article>
+                              </div>
+                              <div class="col-4 col-12-mobile">
+                                <article class="item">
+                                  <header>
+                                    <strong><h3 class="fontcolor"><a href="#">About Us</a></h3></strong>
+                                      <p class="about-us-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                  </header>
+                                </article>
+                              </div>
+                              <div class="col-4 col-12-mobile">
+                                <article class="item">
+                                  <header>
+                                    <strong><h3 class="fontcolor"><a href="#">Contact Info</a></h3></strong>
+                                    <ul class="list-unstyled">
+                                      <li class="address list-center"><i class="far fa-compass"></i>  123 Fake St., San Diego, CA</li>
+                                      <li class="phone list-center"><a href="#"><i class="fas fa-phone-square"></i>  +1 (000)-000-0000</a></li>
+                                      <li class="email list-center"><i class="far fa-envelope"></i>  email</li>
+                                    </ul>
+                                  </header>
+                                </article>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </footer> 
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/main.js"></script>
+        <script src="filtertest.js"></script>
+    </div>     
+    </body>
+    </html>
